@@ -1,0 +1,21 @@
+
+# Installs Lynx on group of hosts in apacheweb
+# File is read from top to bottom.
+
+
+- hosts: apacheweb
+
+# Import yml file which has all the variables. Playbook can contain both types, the vars_files section and vars section.
+  vars_files:
+  - vars.yml
+
+# Variables Section Follows  
+  vars:
+    control_server: munu31.mylabserver.com
+    author_name: RajKiranGade
+# Lets say we are deploying a web-server, then declare a web_root variable
+    web_root: /var/www/html  
+  tasks:
+  - name: Install Lynx on apacheweb group of hosts
+    yum: pkg=lynx state=installed update_cache=true
+  

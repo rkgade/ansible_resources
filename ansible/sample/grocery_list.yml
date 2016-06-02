@@ -1,0 +1,33 @@
+---# Grocery List
+- Bananas
+- Apples
+- Oranges
+- Cereal
+- Eggs
+
+Else
+Second Line can be like as follows
+[bananas, apples, oranges, cereal, eggs]
+
+
+Associative Arrays/Key Value Pairs
+
+---# Employee Information ( List )
+Name: John Smith
+Age: 44
+HireDate: 09/02/2011
+
+If using key value pairs in inline as above, use Curly Braces like {}
+
+Strings don't require quotations.
+
+
+
+YAML can detect datatypes. However, if you want to specify manually, you can.
+a: 123 :-> Integer
+b: "123" :-> String
+
+Type Casting:
+
+!!float 123
+!!str 123

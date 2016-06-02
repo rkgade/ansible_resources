@@ -1,0 +1,9 @@
+
+#  Override hosts file
+
+You can use -i <hosts file> with ansible command for ansible to pick up user specified hosts file
+
+
+# Override roles directory
+
+You can append roles_path with : . Precedence is in order typed.

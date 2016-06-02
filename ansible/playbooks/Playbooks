@@ -1,0 +1,17 @@
+
+
+# Playbooks
+
+Used to write better ansible scripts that has good features which ansible can understand and easy for developers to understand.
+
+To install a S/W
+
+$ ansible local -s -m shell -a 'yum install lynx -y'
+
+Now, using playbooks, we can write something like :
+
+$ ansible local -s -m yum -a 'pkg=lynx state=installed update_cache=true'
+
+
+To put the above command into a playbook, please refer lynx_install.yml
+

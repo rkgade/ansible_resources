@@ -1,0 +1,9 @@
+
+# Ansible Config File Precedence Order
+
+# Describes where does ansible look for it's configuration file?	
+
+1. ANSIBLE_CONFIG path variable
+2. Current Directory
+3. Home Directory of the user who runs the command. ( File will be .ansible.cfg :-> Hidden File )
+4. Final Directory :-> /etc/ansible/ansible.cfg .

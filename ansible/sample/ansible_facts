@@ -1,0 +1,17 @@
+
+# Get Facts from Machines
+
+# To test on localhost , use
+
+$ ansible local -m setup
+
+For File System storage directory, use the following command
+
+$ ansible local -m setup --tree /tmp/facts
+
+
+To Filter for Facts :
+
+$ ansible webserver -m setup -a 'filter=ansible_ip*'
+
+Disadantages of using grep :-> grep only gives the matching lines, but filter gives the matched json data entirely.

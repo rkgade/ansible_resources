@@ -1,0 +1,10 @@
+--- # This is my first Playbook for Ansible
+
+# Following is the target section. Defines who it will communicate it with. 
+# As long as SSH setup exists, hostname/IP can also be used, else Group name can also be used.
+
+- hosts: apacheweb
+# How should ansible communicate it with the target Machine?
+  user: test
+  sudo: yes
+

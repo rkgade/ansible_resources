@@ -1,0 +1,14 @@
+# Sample Ansible Playbook
+
+# # Name : Lynx_Telnet_Ansible_Playbook
+# # Description :
+# #               This playbook when run, looks for a group of hosts called 'appserver' and then try to install lynx and query if telnet is installed using 'yum' module.
+
+
+---# Playbook Description  ( This is a comment, Ignored when run )
+ - hosts: appserver
+   tasks:
+   - name: Install Lynx on App Servers ( Machine configured as appserver hosts in hosts config )
+     yum:  pkg=lunx state=installed update_cache=true
+   - name:  Querwilliamyeh/ansibleying for Telnet Install
+     yum:  pkg=telnet state=present update_cache=true
